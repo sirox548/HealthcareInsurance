@@ -50,11 +50,16 @@
             <button type="submit" class="btn btn-primary w-100">Predict</button>
         </form>
 
+
+<!--        <div class="alert alert-success mt-4" role="alert">-->
+<!--            <h2 class="text-center">Predicted Charges: ${{ prediction }}</h2>-->
+<!--        </div>-->
         {% if prediction %}
-        <div class="alert alert-success mt-4" role="alert">
-            <h2 class="text-center">Predicted Charges: ${{ prediction }}</h2>
-        </div>
+            <div class="alert alert-success mt-4 text-center">
+                <h4>Predicted Charges: ${{ prediction }}</h4>
+            </div>
         {% endif %}
+
     </div>
 
     <!-- Bootstrap JavaScript Bundle -->
